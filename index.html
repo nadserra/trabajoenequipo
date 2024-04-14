@@ -1,0 +1,260 @@
+<html>
+<head>
+<title>css</title>
+<table bgcolor="black" >                                                          
+<tr>
+<td><font color="white" size="5"><marquee><h1>CSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤCSSㅤ</marquee>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+</font></h1>
+</td>
+</tr>
+</table>
+</head>
+<body bgcolor="black" >                                                             
+<hr size="5" color="#FDFEFE" >
+<hr  size="5"color="#ff69b4">
+<br>
+<center><b><i><font color="#e44f9c" face="cursive" size="5">¿CÓMO IMPLEMENTAR CSS EN TU PAGINA HTML?</font></i></b></center>
+<br>
+<p><font color="white">
+Incluir CSS en HTML puede llegar a ser confuso ya que existen varias formas de hacerlo.
+<br>
+<br>
+Se puede incluir CSS en HTML:
+<br>
+<br>
+<ul >
+<li><b>VINCULANDO: </b>un archivo de hoja de estilo separado</li>
+<li><b>INCRUSTANDO:</b> CSS en una etiqueta de estilo</li>
+<li><b>AGREGANDO: </b>estilos en línea a elementos HTML</li>
+<li><b>IMPORTANDO:</b> archivos de hojas de estilo existentes</li>
+<li><b>INYECTANDO:</b> css con javascript</li>
+<br>
+<br>
+Como sabemos CSS es el lenguaje para describir cómo es presentada una página web, incluidos los colores, el diseño y las fuentes. Permite adaptar la 
+presentación a diferentes tipos de dispositivos.
+<br>
+<br>
+<center><b><i><font color="#e44f9c" face="cursive" size="5">1. IMPLEMENTANDO UNA HOJA DE ESTILOS EXTERNA</font></i></b></center>
+<br>
+Este es el método más común para adjuntar reglas CSS a documentos HTML.
+<br>
+<br>
+Con este método, todas las reglas de estilo están contenidas en un único archivo de texto que se guarda con la extensión .css.
+<br>
+<br>
+Este archivo se guarda en un servidor y se vincula directamente desde cada archivo HTML. Para su vinculación se utiliza la etiqueta link de la siguiente manera:
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="https://www.inesem.es/revistadigital/informatica-y-tics/files/2019/08/metodo-1.png?x76792"/>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+El atributo<b> rel</b> indica al navegador que el archivo vinculado es una hoja de estilo en cascada (css).
+<br>
+<br>
+El atributo <b>type</b> indica el tipo de archivo vinculado. Si se utiliza HTML5 no es obligatorio incluir este atributo.
+<br>
+<br>
+El atributo<b> href </b>es donde especifica la ruta a su archivo CSS.
+<br>
+<br>
+<br>
+<ul>
+<li>Si el archivo CSS está en la misma carpeta que su archivo HTML, entonces no se requiere una ruta, solo necesita especificar el nombre de archivo.</li>
+<li>Si se guarda en una carpeta distinta, puede especificar la ruta de dicha carpeta de manera relativa o absoluta. También es posible especificar una ruta mediante
+ una url.</li>
+</ul>
+<br>
+<br>
+El atributo<b> media</b> en una etiqueta que especifica cuándo se deben aplicar las reglas CSS. Los valores más comunes son:
+<br>
+<br>
+<br>
+<br>
+<ul>
+<li><b>Screen:</b> indica para su uso en una pantalla de computadora.</li>
+<li><b>Projection: </b>para presentaciones proyectadas.</li>
+<li><b>Handheld:</b> para dispositivos de mano (generalmente con pantallas pequeñas).</li>
+<li><b>Print:</b> para diseñar páginas web impresas.</li>
+<li><b>All (valor predeterminado):</b> Para que el estilo se aplique a todos los tipos de medios.</li>
+</ul>
+<br>
+<br>
+
+<br>
+Las principales<b> ventajas</b> de este método son:
+<br>
+<br>
+<ol>
+<li>Los cambios del código css son reflejados en todas las páginas.</li>
+<li>Cambiar el tema del sitio web es fácil.</li>
+<li>La velocidad del sitio web aumenta para múltiples solicitudes de página.</li>
+<li>La principal desventaja es que se requiere una solicitud HTTP adicional para cada archivo css vinculado.</li>
+</ol>
+<br>
+<br>
+<center><b><i><font color="#e44f9c" face="cursive" size="5">2. INCRUSTANDO CSS EN UNA ETIQUETA</font></i></b></center>
+<br>
+Puede incluir CSS en HTML utilizando la etiqueta style de la siguiente forma:
+<br>
+<br>
+<br>
+<img src="https://www.inesem.es/revistadigital/informatica-y-tics/files/2019/08/metodo-2.png?x76792"/>
+<br>
+<br>
+<br>
+
+El atributo <b>type </b>es para especificar el tipo de código incluido y es posible omitirlo en HTML5 y el atributo media controla cuándo se aplican los estilos.
+<br>
+<br>
+Las principales<b> ventajas</b> de este método son:
+<br>
+<br>
+<ul>
+<li>Tiempos de carga más rápidos.</li>
+<li>Funciona muy bien con estilos dinámicos.</li>
+</ul>
+<br>
+<br>
+La principal <b>desventaja</b> es que los estilos incrustados deben ser descargados con cada solicitud de página.</li>
+<br>
+<br>
+
+<center><b><i><font color="#e44f9c" face="cursive" size="5">3. AGREGANDO ESTILOS EN LINEA</font></i></b></center>
+<br>
+<br>
+
+Las reglas de estilo se pueden agregar directamente a cualquier elemento HTML.
+<br>
+<br>
+Para hacer esto, simplemente hay que agregar un <b>atributo de estilo al elemento </b>y luego indicar las reglas deseadas<b> en la misma línea.</b>
+<br>
+<br>
+Ejemplo  de un<b> encabezado (h2)</b> al que aplicamos un estilo donde el color del texto será rojo y el color de fondo será negro:
+<br>
+<br>
+<br>
+<img src="https://www.inesem.es/revistadigital/informatica-y-tics/files/2019/08/metodo-3.png?x76792"/>
+<br>
+<br>
+<br>
+Este método presenta las siguientes <b>ventajas</b>:
+<ul>
+<li>Los estilos en línea anulan los estilos externos. Por tanto es buena idea este método para casos concretos que no 
+deben seguir la norma general de estilo para dicho elemento establecida en el estilo externo.</li>
+<li>Páginas más rápidas.</li>
+<li>Puede cambiar los estilos sin editar el archivo css principal.</li>
+<li>Ideal para estilos dinámicos.</li>
+<li>Útil para el envío de emails en formato html.</li>
+
+</ul>
+<br>
+<br>
+Por el contrario, tiene las siguientes <b>desventajas:</b>
+<br>
+<br>
+<ul>
+<li>El uso excesivo de estilos en multitud de etiquetas hará que la página ocupe más tamaño y en consecuencia aumente el tiempo de carga.</li>
+<li>El mantenimiento y los cambios de estilo se vuelven más complicados.</li>
+</ul>
+<br>
+<br>
+<br>
+<center><b><i><font color="#e44f9c" face="cursive" size="5">4. IMPORTANDO ARCHIVOS DE HOJAS DE ESTILO EXISTENTES</font></i></b></center>
+<br>
+<br>
+Otra forma interesante de incluir CSS en HTML es con la regla<b> @import.</b>
+<br>
+<br>
+Esta regla nos permite adjuntar un nuevo archivo CSS desde el propio CSS.
+<br>
+La sintaxis sería:
+<br>
+<br>
+<br>
+<br>
+<img src="https://www.inesem.es/revistadigital/informatica-y-tics/files/2019/08/metodo-4.png?x76792">
+<br>
+<br>
+<br>
+<br>
+En dicha importación estamos incluyendo las reglas establecidas en dicho archivo css al archivo que ya estamos desarrollando.
+<br>
+<br>
+Es importante recordar que la ruta es relativa al archivo CSS actual en el que estamos, si el CSS está incrustado en la página HTML, entonces la ruta es relativa al archivo HTML.
+<br>
+<br>
+La principal ventaja del uso de esta regla es la facilidad de agregar nuevos archivos css sin cambiar el etiquetado html.
+<br>
+<br>
+Tiene una desventaja y es que se requieren solicitudes HTTP adicionales.
+<br>
+<br>
+<b><i>Inyectando css con javascript</i></b>
+<br>
+<br>
+A veces necesitamos aplicar CSS desde Javascript. Podemos hacer esto de las siguientes maneras:
+<br>
+<br>
+<b><i>Inyectar un archivo de hoja de estilo externo con javascript</i></b>
+<br>
+<br>
+Hay que crear un elemento de enlace, agregar la ruta del archivo CSS en el atributo href y después inyectarlo en la página con javascript:
+<br>
+<br>
+<br>
+<br>
+<img src="https://www.inesem.es/revistadigital/informatica-y-tics/files/2019/08/metodo-5-1.png?x76792">
+<br>
+<br>
+<br>
+<br>
+<b><i>Insertar un bloque de reglas en una página con javascript</i></b>
+<br>
+<br>
+Debemos crear un elemento de estilo, insertar nuestras reglas CSS como una cadena y luego adjuntar el elemento a la cabecera del archivo HTML:
+<br>
+<br>
+<br>
+<br>
+<img src="https://www.inesem.es/revistadigital/informatica-y-tics/files/2019/08/metodo-5-2.png?x76792">
+<br>
+<br>
+<br>
+<br>
+<b><i>Agregar estilos en línea a elementos individuales con javascript<i></b>
+<br>
+<br>
+Primero hay que obtener un identificador de los elementos que queremos cambiar, y posteriormente agregarle las propiedades CSS deseadas:
+<br>
+<br>
+<br>
+<br>
+<img src="https://www.inesem.es/revistadigital/informatica-y-tics/files/2019/08/metodo-5-3.png?x76792">
+<br>
+<br>
+<br>
+<br>
+<br>
+Estos son todos los métodos posibles para incluir css en html y lo más importante es saber cuándo utilizar uno y cuando otro.
+<br>
+<br>
+Como regla general, si un estilo es utilizado en muchos archivos html o muchas veces en un mismo archivo es recomendable tenerlo en un archivo css externo.
+Por el contrario, si se quiere aplicar un estilo único a un elemento o se quiere modificar la regla general para dicha etiqueta en una en concreto es recomendable aplicar estilos en línea.
+</p>
+<br>
+<br>
+<br>
+<br>
+<hr size="5" color="#FDFEFE" >
+<hr  size="5"color="#ff69b4">
+<br>
+<br>
+<br>
+<a href="index2.html"><center><b><i><font color="#ff69b4" face="cursive" size="2">ATRIBUTOS DE HOJAS DE ESTILOS</font></i></b></center></a>
